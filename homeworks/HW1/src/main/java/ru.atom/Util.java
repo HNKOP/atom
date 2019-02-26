@@ -27,7 +27,6 @@ public class Util {
      * @return the largest of values.
      */
     public static int max(int[] values) {
-
       return Arrays.stream(values).max().getAsInt();
     }
 
