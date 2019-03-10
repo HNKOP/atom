@@ -1,6 +1,3 @@
-package ru.example;
-
-
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
@@ -10,13 +7,14 @@ public class Main {
 
 
     private static final org.slf4j.Logger log = LoggerFactory.getLogger(Main.class);
+
     public static void main(String[] args) {
 
 
         WordFinder wordFinder = new WordFinder("dictionary.txt");
         try {
             String word = wordFinder.getWord();
-
+            log.info("оЫЛВирыфлврыфловрыфловрфыл");
             System.out.println("Вы играете в игру \"Быки и коровы\" \nВам нужно угадать слово из " + word.length() + " букв");
             String ans = "";
             int tries = 0;
